@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="5dp"
+        app:cardPreventCornerOverlap="true">
+    <RelativeLayout
+        android:id="@+id/userdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/cb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            android:button="@drawable/unchecked_checkbox"
+            android:drawableRight="@drawable/custom_checkbox" />
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
